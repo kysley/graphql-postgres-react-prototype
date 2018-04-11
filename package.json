@@ -1,0 +1,29 @@
+{
+  "name": "unravel-prototype",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server-express": "^1.3.4",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2",
+    "graphql-postgres-subscriptions": "^1.0.1",
+    "graphql-tools": "^2.24.0",
+    "knex": "^0.14.5",
+    "pg": "^7.4.1",
+    "subscriptions-transport-ws": "^0.9.7"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "db:create": "run.env createdb profileproto",
+    "db:migrate": "run.env knex migrate:latest"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3",
+    "run.env": "^1.0.1"
+  }
+}
